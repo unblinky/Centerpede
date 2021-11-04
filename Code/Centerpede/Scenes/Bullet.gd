@@ -1,8 +1,8 @@
-extends Node2D
+extends Area2D
 
 export var speed = 600.0 # 300 - 1200
 
-func _process(delta_time):	
+func _process(delta_time):
 	if position.y < 50:
 		Kill()
 		pass
