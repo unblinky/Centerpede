@@ -31,7 +31,7 @@ func Fire():
 		var bullet: Bullet = BULLET_PS.instance()
 		bullet.player = self
 		bullet.position = position
-		get_node("../../Bullets").add_child(bullet)
+		get_node("../Bullets").add_child(bullet)
 		ammo_count -= 1
 		print("Fire!")
 	
