@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sprite_atlas.png-0009cc9b999799d39f5aea81be6b8a5b.stex"
+path="res://.import/ready_1.png-63372ecb02048caa351ff989d5d3a6cc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/sprite_atlas.png"
-dest_files=[ "res://.import/sprite_atlas.png-0009cc9b999799d39f5aea81be6b8a5b.stex" ]
+source_file="res://Content/Player/Assets/ready_1.png"
+dest_files=[ "res://.import/ready_1.png-63372ecb02048caa351ff989d5d3a6cc.stex" ]
 
 [params]
 

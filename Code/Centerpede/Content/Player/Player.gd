@@ -1,7 +1,7 @@
 extends KinematicBody2D
 class_name Player
 
-const BULLET_PS: PackedScene = preload("res://Scenes/Bullet.tscn")
+const BULLET_PS: PackedScene = preload("res://Content/Bullet/Bullet.tscn")
 
 export var speed: float = 300 # Pixels / sec.
 var direction: Vector2

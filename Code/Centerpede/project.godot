@@ -12,17 +12,17 @@ _global_script_classes=[ {
 "base": "Area2D",
 "class": "Bullet",
 "language": "GDScript",
-"path": "res://Scenes/Bullet.gd"
+"path": "res://Content/Bullet/Bullet.gd"
 }, {
 "base": "Node2D",
 "class": "Mushroom",
 "language": "GDScript",
-"path": "res://Scenes/Mushroom.gd"
+"path": "res://Content/Mushroom/Mushroom.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
-"path": "res://Scenes/Player.gd"
+"path": "res://Content/Player/Player.gd"
 } ]
 _global_script_class_icons={
 "Bullet": "",
@@ -33,7 +33,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Centerpede"
-run/main_scene="res://Scenes/Main.tscn"
+run/main_scene="res://Main/Main.tscn"
 config/icon="res://icon.png"
 
 [display]

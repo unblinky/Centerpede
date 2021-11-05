@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spawn_0000.png-61b9a1df7474cb0ad5ad845e17b29cf5.stex"
+path="res://.import/spawn_1.png-5483f6aa5315843ac293d3049dc8be9d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Mushroom/spawn_0000.png"
-dest_files=[ "res://.import/spawn_0000.png-61b9a1df7474cb0ad5ad845e17b29cf5.stex" ]
+source_file="res://Content/Mushroom/Assets/spawn_1.png"
+dest_files=[ "res://.import/spawn_1.png-5483f6aa5315843ac293d3049dc8be9d.stex" ]
 
 [params]
 
