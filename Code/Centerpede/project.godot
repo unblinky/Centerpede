@@ -17,7 +17,7 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "Player",
 "language": "GDScript",
-"path": "res://Scenes/Player.gd"
+"path": "res://Content/Player/Player.gd"
 } ]
 _global_script_class_icons={
 "Bullet": "",
@@ -29,6 +29,12 @@ _global_script_class_icons={
 config/name="Centerpede"
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=400
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [input]
 

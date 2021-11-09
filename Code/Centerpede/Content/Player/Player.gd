@@ -3,7 +3,7 @@ class_name Player
 
 const BULLET_PS: PackedScene = preload("res://Scenes/Bullet.tscn")
 
-export var speed: float = 300 # Pixels / sec.
+var speed: float = 300 # Pixels / sec.
 var direction: Vector2
 var velocity: Vector2
 var ammo_count: int = 1
