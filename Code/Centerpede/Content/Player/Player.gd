@@ -3,12 +3,12 @@ class_name Player
 
 const BULLET_PS: PackedScene = preload("res://Scenes/Bullet.tscn")
 
-var speed: float = 300 # Pixels / sec.
+export var speed: float = 300 # Pixels / sec.
 var direction: Vector2
 var velocity: Vector2
 var ammo_count: int = 1
 
-func _process(delta_time):
+func _process(_delta_time):
 	# Input Direction
 	var x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	var y = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
@@ -17,8 +17,10 @@ func _process(delta_time):
 	# Input Fire
 	if Input.is_action_pressed("fire"):
 		Fire()
-
-	Move(direction * speed * delta_time)
+	
+	velocity = direction * speed
+	move_and_slide(velocity)
+	#Move(direction * speed * delta_time)
 	
 
 func Move(delta_position: Vector2):
