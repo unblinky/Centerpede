@@ -1,7 +1,7 @@
 extends KinematicBody2D
 class_name Player
 
-const BULLET_PS: PackedScene = preload("res://Scenes/Bullet.tscn")
+const BULLET_PS: PackedScene = preload("res://Content/Bullet/Bullet.tscn")
 
 export var speed: float = 300 # Pixels / sec.
 var direction: Vector2
@@ -35,7 +35,7 @@ func Reload(count: int):
 func Fire():
 	if ammo_count > 0:
 		# Spawn bullet
-		var bullet: Bullet = BULLET_PS.instance()
+		var bullet = BULLET_PS.instance()
 		bullet.player = self
 		bullet.position = position
 		get_parent().get_node("Bullets").add_child(bullet)

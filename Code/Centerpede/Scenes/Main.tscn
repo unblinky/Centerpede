@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Centipede.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Segment.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Spider.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Content/Segment/Segment.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Content/Spider/Spider.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Content/Player/Player.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Content/Mushroom/Mushroom.tscn" type="PackedScene" id=12]
 
@@ -18,11 +18,11 @@ scale = Vector2( 2, 2 )
 [node name="Bullets" type="Node2D" parent="PlayingField"]
 
 [node name="Player" parent="PlayingField" instance=ExtResource( 11 )]
-position = Vector2( 24.2306, 196.803 )
+position = Vector2( 64.1836, 168.206 )
 speed = 200.0
 
 [node name="Mushroom" parent="PlayingField" instance=ExtResource( 12 )]
-position = Vector2( 137.33, 147.711 )
+position = Vector2( 85.6633, 59.3777 )
 
 [node name="Spider" parent="PlayingField" instance=ExtResource( 4 )]
 
@@ -31,7 +31,7 @@ position = Vector2( 137.33, 147.711 )
 [node name="Segment" parent="PlayingField" instance=ExtResource( 3 )]
 
 [node name="Mushroom2" parent="PlayingField" instance=ExtResource( 12 )]
-position = Vector2( 80.3753, 82.2104 )
+position = Vector2( 36.3753, 40.5437 )
 
 [node name="Mushroom3" parent="PlayingField" instance=ExtResource( 12 )]
-position = Vector2( 131.849, 75.7447 )
+position = Vector2( 64.849, 30.7447 )

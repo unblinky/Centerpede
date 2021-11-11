@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player_0001.png-4a31acbeda21bd6a97b68212d2a7d8c3.stex"
+path="res://.import/bullet_0001.png-32d0734be21cfef4c586d10c5de5bed7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Mushroom/player_0001.png"
-dest_files=[ "res://.import/player_0001.png-4a31acbeda21bd6a97b68212d2a7d8c3.stex" ]
+source_file="res://Content/Bullet/Assets/bullet_0001.png"
+dest_files=[ "res://.import/bullet_0001.png-32d0734be21cfef4c586d10c5de5bed7.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
