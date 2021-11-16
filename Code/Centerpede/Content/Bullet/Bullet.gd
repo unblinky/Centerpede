@@ -1,3 +1,4 @@
+# Bullet.gd
 extends KinematicBody2D
 class_name Bullet
 
@@ -7,9 +8,7 @@ var player
 func _process(delta_time):
 	if position.y < -50:
 		Kill()
-		pass
-		
-	#position.y -= speed * delta_time
+
 	move_and_slide(Vector2.UP * speed)
 	
 func Kill():
