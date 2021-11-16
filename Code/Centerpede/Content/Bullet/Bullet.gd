@@ -5,7 +5,7 @@ export var speed = 600.0 # 300 - 1200
 var player
 
 func _process(delta_time):
-	if position.y < 50:
+	if position.y < -50:
 		Kill()
 		pass
 		
