@@ -29,6 +29,8 @@ position = Vector2( 85.6633, 59.3777 )
 [node name="Centipede" parent="PlayingField" instance=ExtResource( 2 )]
 
 [node name="Segment" parent="PlayingField" instance=ExtResource( 3 )]
+position = Vector2( 171.702, 57.7989 )
+speed = 20.0
 
 [node name="Mushroom2" parent="PlayingField" instance=ExtResource( 12 )]
 position = Vector2( 36.3753, 40.5437 )
