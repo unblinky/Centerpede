@@ -3,6 +3,7 @@ class_name Player
 
 const BULLET_PS: PackedScene = preload("res://Content/Bullet/Bullet.tscn")
 
+
 export var speed: float = 300 # Pixels / sec.
 var direction: Vector2
 var velocity: Vector2
@@ -38,8 +39,10 @@ func Fire():
 		var bullet = BULLET_PS.instance()
 		bullet.player = self
 		bullet.position = position
-		get_parent().get_node("Bullets").add_child(bullet)
+		get_parent().add_child(bullet)
 		print("Fire!")
 
 		ammo_count -= 1
 	
+func Kill():
+	queue_free()
