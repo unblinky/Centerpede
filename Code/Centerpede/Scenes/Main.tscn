@@ -15,8 +15,6 @@ scale = Vector2( 2, 2 )
 
 [node name="PlayerZone" type="Node2D" parent="PlayingField"]
 
-[node name="Bullets" type="Node2D" parent="PlayingField"]
-
 [node name="Player" parent="PlayingField" instance=ExtResource( 11 )]
 position = Vector2( 64.1836, 168.206 )
 speed = 200.0

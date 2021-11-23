@@ -17,8 +17,5 @@ func _on_Segment_body_entered(body):
 		
 		var shroom = MUSHROOM_PS.instance()
 		shroom.position = position
-		#get_node("../").add_child(shroom)
-		#call_deferred("Kill")
-		
-func Kill():
-	queue_free()
+		get_node("../").call_deferred("add_child", shroom)
+		queue_free()
