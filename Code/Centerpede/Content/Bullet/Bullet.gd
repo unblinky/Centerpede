@@ -8,9 +8,9 @@ var player
 func _process(delta_time):
 	if position.y < -50:
 		Kill()
-
 	move_and_slide(Vector2.UP * speed)
 	
 func Kill():
 	player.Reload(1)
 	queue_free()
+

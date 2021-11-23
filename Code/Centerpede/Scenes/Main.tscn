@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Centipede.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Content/Segment/Segment.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Content/Spider/Spider.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Content/Player/Player.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Content/Mushroom/Mushroom.tscn" type="PackedScene" id=12]
@@ -28,12 +27,13 @@ position = Vector2( 85.6633, 59.3777 )
 
 [node name="Centipede" parent="PlayingField" instance=ExtResource( 2 )]
 
-[node name="Segment" parent="PlayingField" instance=ExtResource( 3 )]
-position = Vector2( 171.702, 57.7989 )
-speed = 20.0
-
 [node name="Mushroom2" parent="PlayingField" instance=ExtResource( 12 )]
 position = Vector2( 36.3753, 40.5437 )
 
 [node name="Mushroom3" parent="PlayingField" instance=ExtResource( 12 )]
 position = Vector2( 64.849, 30.7447 )
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
