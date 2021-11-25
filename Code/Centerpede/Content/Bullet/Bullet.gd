@@ -12,5 +12,7 @@ func _process(delta_time):
 	move_and_slide(Vector2.UP * speed)
 	
 func Kill():
-	player.Reload(1)
+	if is_instance_valid(player):
+		player.Reload(1) # FIXME: Untested. If player is killed before the bullet. The bullet can't find the Player. 
+	
 	queue_free()

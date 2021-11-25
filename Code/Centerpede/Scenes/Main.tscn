@@ -68,3 +68,9 @@ position = Vector2( 30.7786, 32 )
 
 [node name="Mushroom3" parent="PlayingField" instance=ExtResource( 12 )]
 position = Vector2( 167.818, 104 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
