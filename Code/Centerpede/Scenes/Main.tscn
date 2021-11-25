@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Main.gd" type="Script" id=1]
 [ext_resource path="res://Content/Spider/Spider.tscn" type="PackedScene" id=4]
@@ -7,6 +7,9 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 175.453, 9.24986 )
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 175.454, 4 )
+
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -14,10 +17,8 @@ script = ExtResource( 1 )
 scale = Vector2( 2, 2 )
 
 [node name="PlayerZone" type="StaticBody2D" parent="PlayingField"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayingField/PlayerZone"]
-position = Vector2( 100.547, 150.75 )
-shape = SubResource( 1 )
+collision_layer = 2
+collision_mask = 3
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="PlayingField/PlayerZone"]
 position = Vector2( 100.844, 306.5 )
@@ -32,6 +33,12 @@ shape = SubResource( 1 )
 position = Vector2( 208, 176 )
 rotation = 1.57079
 shape = SubResource( 1 )
+
+[node name="TopBounds" type="StaticBody2D" parent="PlayingField"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayingField/TopBounds"]
+position = Vector2( 84, 336 )
+shape = SubResource( 2 )
 
 [node name="Mushroom" parent="PlayingField" instance=ExtResource( 12 )]
 position = Vector2( 114.166, 253.132 )
@@ -48,16 +55,16 @@ position = Vector2( 128.182, 44 )
 position = Vector2( 32, 104 )
 
 [node name="Mushroom9" parent="PlayingField" instance=ExtResource( 12 )]
-position = Vector2( 114.166, 92 )
+position = Vector2( 92, 144 )
 
 [node name="Mushroom5" parent="PlayingField" instance=ExtResource( 12 )]
 position = Vector2( 160, 64 )
 
 [node name="Mushroom6" parent="PlayingField" instance=ExtResource( 12 )]
-position = Vector2( 160, 208 )
+position = Vector2( 108, 144 )
 
 [node name="Mushroom7" parent="PlayingField" instance=ExtResource( 12 )]
-position = Vector2( 106.348, 216 )
+position = Vector2( 30.7786, 32 )
 
 [node name="Mushroom3" parent="PlayingField" instance=ExtResource( 12 )]
-position = Vector2( 38.7786, 233.807 )
+position = Vector2( 167.818, 104 )

@@ -7,7 +7,9 @@ const BULLET_PS: PackedScene = preload("res://Content/Bullet/Bullet.tscn")
 export var speed: float = 300 # Pixels / sec.
 var direction: Vector2
 var velocity: Vector2
-var ammo_count: int = 1
+var ammo_capacity: int = 4
+var ammo_inventory: int = 1
+
 
 func _process(_delta_time):
 	# Input Direction
@@ -29,12 +31,13 @@ func Move(delta_position: Vector2):
 
 
 func Reload(count: int):
-	ammo_count += count
-	print("Ammo Count: " + str(ammo_count))
+	if ammo_inventory < ammo_capacity:
+		ammo_inventory += count
+		print("Ammo Imventory: " + str(ammo_inventory))
 	
 	
 func Fire():
-	if ammo_count > 0:
+	if ammo_inventory > 0:
 		# Spawn bullet
 		var bullet = BULLET_PS.instance()
 		bullet.player = self
@@ -42,7 +45,7 @@ func Fire():
 		get_parent().add_child(bullet)
 		print("Fire!")
 
-		ammo_count -= 1
+		ammo_inventory -= 1
 	
 func Kill():
 	queue_free()
