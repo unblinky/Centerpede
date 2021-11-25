@@ -23,6 +23,8 @@ func _process(delta_time):
 	
 	
 func _on_Segment_body_entered(body):
+	print(body)
+	
 	if body is Bullet or body is Player:
 		body.Kill()
 		
@@ -30,8 +32,7 @@ func _on_Segment_body_entered(body):
 		shroom.position = position
 		get_node("../").call_deferred("add_child", shroom)
 		queue_free()
-		
-	if body is Mushroom:
+	else:
 		is_dropping = true
 		direction = Vector2.DOWN
 		down_pos = position
